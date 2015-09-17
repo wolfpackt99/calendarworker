@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "F3Area51.Calendar.Worker", "F3Area51.Calendar.Worker\F3Area51.Calendar.Worker.csproj", "{C843ECDE-B9F4-483D-AB80-1605E5FDB8FA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExternalLibrary", "ExternalLibrary", "{3A80E1F5-BAD2-4814-AA0E-9DC6BCE65549}"
+	ProjectSection(SolutionItems) = preProject
+		ExternalLibrary\F3.Business.dll = ExternalLibrary\F3.Business.dll
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C843ECDE-B9F4-483D-AB80-1605E5FDB8FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C843ECDE-B9F4-483D-AB80-1605E5FDB8FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C843ECDE-B9F4-483D-AB80-1605E5FDB8FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C843ECDE-B9F4-483D-AB80-1605E5FDB8FA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
