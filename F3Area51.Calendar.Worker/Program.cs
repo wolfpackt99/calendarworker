@@ -22,8 +22,10 @@ namespace F3Area51.Calendar.Worker
 
         private static void DoSomething()
         {
-            var x = new CalendarBusiness();
-            var result = x.Publish();
+           
+                var x = new CalendarBusiness();
+                Task.Run(async () => await x.Publish());
+            
         }
     }
 }
