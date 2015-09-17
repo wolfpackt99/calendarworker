@@ -8,6 +8,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExternalLibrary", "ExternalLibrary", "{3A80E1F5-BAD2-4814-AA0E-9DC6BCE65549}"
 	ProjectSection(SolutionItems) = preProject
 		ExternalLibrary\F3.Business.dll = ExternalLibrary\F3.Business.dll
+		ExternalLibrary\F3Test-c745d0ff8c8e.p12 = ExternalLibrary\F3Test-c745d0ff8c8e.p12
 	EndProjectSection
 EndProject
 Global
