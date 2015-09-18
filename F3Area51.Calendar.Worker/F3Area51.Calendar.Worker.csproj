@@ -40,7 +40,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="F3.Business, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\ExternalLibrary\F3.Business.dll</HintPath>=
+      <HintPath>..\ExternalLibrary\F3.Business.dll</HintPath>
     </Reference>
     <Reference Include="F3.Infrastructure">
       <HintPath>..\ExternalLibrary\F3.Infrastructure.dll</HintPath>
