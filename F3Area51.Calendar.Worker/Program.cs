@@ -18,7 +18,7 @@ namespace F3Area51.Calendar.Worker
                 Console.WriteLine("starting up.");
                 DoSomething().Wait();
                 Console.WriteLine("sleeping");
-                Thread.Sleep(10 * 60 * 1000);
+                Thread.Sleep(1 * 60 * 1000);
             }
         }
 
