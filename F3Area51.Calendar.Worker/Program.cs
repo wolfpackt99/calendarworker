@@ -16,17 +16,13 @@ namespace F3Area51.Calendar.Worker
             while (true)
             {
                 Console.WriteLine("starting up.");
-                Task t = DoSomething();
-                t.ContinueWith((done) =>
-                {
-                    Console.WriteLine("The result is {0}", done);
-                    Console.WriteLine("sleeping");
-                    Thread.Sleep(60 * 1000);
-                });
+                DoSomething().Wait();
+                Console.WriteLine("sleeping");
+                Thread.Sleep(60 * 1000);
             }
         }
 
-        private async static Task<bool> DoSomething()
+        private async static Task DoSomething()
         {
             Console.WriteLine("initiating calender business");
             try
@@ -34,13 +30,12 @@ namespace F3Area51.Calendar.Worker
                 var x = new CalendarBusiness();
 
                 var done = await x.Publish();
-                return done;
+                Console.WriteLine("The result of operation: {0}", done);
             }
             catch (Exception exp)
             {
                 Console.WriteLine(exp.Message);
             }
-            return false;
         }
     }
 }
