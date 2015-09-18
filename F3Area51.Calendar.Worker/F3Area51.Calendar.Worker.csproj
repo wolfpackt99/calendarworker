@@ -39,6 +39,12 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\ExternalLibrary\F3.Business.dll</HintPath>
     </Reference>
+    <Reference Include="F3.Infrastructure">
+      <HintPath>..\ExternalLibrary\F3.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="F3.ViewModels">
+      <HintPath>..\ExternalLibrary\F3.ViewModels.dll</HintPath>
+    </Reference>
     <Reference Include="FirebaseSharp.Portable, Version=1.0.0.5, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\FirebaseSharp.1.0.0.5\lib\portable-net45+win+wp80\FirebaseSharp.Portable.dll</HintPath>
       <Private>True</Private>
