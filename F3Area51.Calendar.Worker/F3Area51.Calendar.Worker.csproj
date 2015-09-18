@@ -116,7 +116,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="F3Test-c745d0ff8c8e.p12" />
+    <Content Include="F3Test-c745d0ff8c8e.p12">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
