@@ -15,17 +15,20 @@ namespace F3Area51.Calendar.Worker
         {
             while (true)
             {
-                DoSomething();
-                Thread.Sleep(60 * 1000);
+                Task t = DoSomething();
+                t.ContinueWith((done) =>
+                {
+                    Thread.Sleep(60 * 1000);
+                });
             }
         }
 
-        private static void DoSomething()
+        private async static Task<bool> DoSomething()
         {
-           
-                var x = new CalendarBusiness();
-                Task.Run(async () => await x.Publish());
-            
+
+            var x = new CalendarBusiness();
+            var done = await x.Publish();
+            return done;
         }
     }
 }
