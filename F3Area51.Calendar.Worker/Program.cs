@@ -18,19 +18,20 @@ namespace F3Area51.Calendar.Worker
                 Console.WriteLine("starting up.");
                 DoSomething().Wait();
                 Console.WriteLine("sleeping");
-                Thread.Sleep(60 * 1000);
+                Thread.Sleep(10 * 60 * 1000);
             }
         }
 
         private async static Task DoSomething()
         {
-            Console.WriteLine("initiating calender business");
+            Console.WriteLine("initiating calender business at {0}", DateTime.UtcNow);
             try
             {
                 var x = new CalendarBusiness();
 
                 var done = await x.Publish();
                 Console.WriteLine("The result of operation: {0}", done);
+                Console.WriteLine("finished publish at {0}", DateTime.UtcNow);
             }
             catch (Exception exp)
             {
