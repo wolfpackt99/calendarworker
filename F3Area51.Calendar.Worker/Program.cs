@@ -35,7 +35,7 @@ namespace F3Area51.Calendar.Worker
             }
             catch (Exception exp)
             {
-                Console.WriteLine(exp.Message);
+                Console.WriteLine("{0}: {1}", exp.Message, exp.Source);
             }
         }
     }
