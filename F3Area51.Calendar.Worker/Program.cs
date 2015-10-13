@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -18,7 +19,7 @@ namespace F3Area51.Calendar.Worker
                 Console.WriteLine("starting up.");
                 DoSomething().Wait();
                 Console.WriteLine("sleeping");
-                Thread.Sleep(20 * 60 * 1000);
+                Thread.Sleep(System.Convert.ToInt32(ConfigurationManager.AppSettings.Get("Interval")) * 60 * 1000);
             }
         }
 
