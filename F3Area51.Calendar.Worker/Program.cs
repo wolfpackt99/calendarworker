@@ -16,7 +16,7 @@ namespace F3Area51.Calendar.Worker
         {
             while (true)
             {
-                Console.WriteLine("starting up the service");
+                Console.WriteLine("starting up the service.");
                 DoSomething().Wait();
                 Console.WriteLine("sleeping");
                 Thread.Sleep(System.Convert.ToInt32(ConfigurationManager.AppSettings.Get("Interval")) * 60 * 1000);
