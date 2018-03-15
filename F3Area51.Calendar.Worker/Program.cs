@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using F3.Business.Calendar;
+using F3.Business.Service;
+using System;
 using System.Configuration;
-using System.Linq;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using F3.Business.Calendar;
-using F3.Business.Service;
-using F3.Business.Workout;
-using Google.Apis.Calendar.v3.Data;
 
 namespace F3Area51.Calendar.Worker
 {
