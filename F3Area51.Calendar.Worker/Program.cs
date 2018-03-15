@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using F3.Business.Calendar;
+using F3.Business.Service;
 using F3.Business.Workout;
 using Google.Apis.Calendar.v3.Data;
 
@@ -30,10 +31,10 @@ namespace F3Area51.Calendar.Worker
             try
             {
                 var x = new CalendarBusiness();
-                x.WorkoutBusiness = new WorkoutBusiness();
+                x.WorkoutBusiness = new SheetService();
                 F3.Business.Maps.ModelMaps.InitMaps();
 
-                var done = await x.Publish();
+                var done = await x.PublishNew();
                 Console.WriteLine("The result of operation: {0}", done);
                 Console.WriteLine("finished publish at {0}", DateTime.UtcNow);
             }
