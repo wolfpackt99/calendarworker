@@ -11,6 +11,7 @@ namespace F3Area51.Calendar.Worker
     {
         static void Main(string[] args)
         {
+            F3.Business.Maps.ModelMaps.InitMaps();
             while (true)
             {
                 Console.WriteLine("starting up the service.");
@@ -27,7 +28,7 @@ namespace F3Area51.Calendar.Worker
             {
                 var x = new CalendarBusiness();
                 x.WorkoutBusiness = new SheetService();
-                F3.Business.Maps.ModelMaps.InitMaps();
+                
 
                 var done = await x.PublishNew();
                 Console.WriteLine("The result of operation: {0}", done);
