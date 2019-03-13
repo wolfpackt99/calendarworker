@@ -54,8 +54,8 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\ExternalLibrary\F3.ViewModels.dll</HintPath>
     </Reference>
-    <Reference Include="FirebaseSharp.Portable, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\FirebaseSharp.2.0.4\lib\portable-net45+win+wp80\FirebaseSharp.Portable.dll</HintPath>
+    <Reference Include="FirebaseSharp.Portable, Version=1.0.0.5, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FirebaseSharp.1.0.0.5\lib\portable-net45+win+wp80\FirebaseSharp.Portable.dll</HintPath>
     </Reference>
     <Reference Include="FirebaseTokenGenerator, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\FirebaseTokenGenerator.2.0.0.0\lib\net35\FirebaseTokenGenerator.dll</HintPath>
@@ -157,6 +157,7 @@
     <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
     </Reference>
+    
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
